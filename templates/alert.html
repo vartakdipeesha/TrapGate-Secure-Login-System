@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Unauthorized Attempt Detected</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #ff4d4d;
+      text-align: center;
+      padding-top: 60px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: white;
+    }
+    img {
+      margin-top: 20px;
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px red;
+    }
+    .retry-button {
+      margin-top: 40px;
+      background-color: red;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px red;
+      transition: 0.3s ease;
+    }
+    .retry-button:hover {
+      background-color: #cc0000;
+      box-shadow: 0 0 15px #ff0000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Intrusion Detected! </h1>
+
+  <p><span class="highlight">Email:</span> {{ email }}</p>
+  <p><span class="highlight">IP Address:</span> {{ ip }}</p>
+
+  <br><br>
+  <a href="/" class="retry-button">Try Again</a>
+
+</body>
+</html>
